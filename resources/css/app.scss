@@ -1,0 +1,205 @@
+:root {
+    --va-input-min-height:40px 
+    
+}
+*{
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@import 'vuestic-ui/css';
+@import 'element-plus/dist/index.css';
+@import 'element-plus/theme-chalk/display.css';
+
+@import './variables';
+@import './utility.scss';
+@import './loginPage.scss';
+@import './confirmDialog.scss';
+@import './taskShow.scss';
+@import './notification.scss';
+@import './comment.scss';
+@import './chatLayout.scss';
+@import './profile.scss';
+@import './homePage.scss';
+@import './showPost.scss';
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+
+.main-layout{
+    display: grid;
+    grid-template-columns:auto  1fr;
+    .asside{
+        min-height: 100vh;
+ 
+    }
+    &.lg{
+        grid-template-columns: 200px auto;
+    }
+ 
+    .info-bar{
+        position: fixed;
+        top: 0;
+        left:0;
+        bottom:0;
+        right: 0;
+        z-index: 10000;
+        background-color: #0000004f;
+        display: none;
+        justify-content: flex-start;
+        &.show{
+            display: flex;  
+        }
+
+        .info-bar-body{
+            min-width: 300px;
+            width: auto;
+            height: 100%;
+            background-color: white;
+        }
+    }
+    .main-content{
+    
+    
+        min-height: 100vh;
+        background-color: var(--va-background);
+       
+        padding-left: $mainBorderSize;
+        padding-right: $mainBorderSize;
+        >.inner{
+            min-height: 100%;
+           // border-top: 3px solid var(--va-focus);
+            border-left: 3px solid $redbookColorLight;
+            border-right: 3px solid $redbookColorLight;
+            border-top-left-radius: $topNavHeight;
+            border-top-right-radius: $topNavHeight;
+            padding:0 15px;
+            .top-nav{
+                height: $topNavHeight;
+
+                
+                border-bottom: $mainBorderSize solid $redbookColor;
+                border-bottom-left-radius: $topNavHeight;
+                border-bottom-right-radius: $topNavHeight;
+                background-color: #f5f9fb;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 15px;
+                padding-right: 15px;
+                .page-title{
+                   height: calc(#{$topNavHeight} - #{$mainBorderSize});
+                    font-weight: 300;
+                    font-size: 1.5rem;
+                    vertical-align:middle;
+                    text-align: left;
+                   
+                    display: flex;
+                    justify-content:flex-start;
+                    align-items: center;
+                    font-style: italic;
+                  
+                }
+                .right-side{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .va-badge{
+                        margin-left: 5px;
+                        cursor: pointer;
+                    }
+                    >button{margin-left: 5px;}
+                }
+            }
+
+            .page-content{
+                padding: 5px;
+                .top-title-box{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    // background-color: #97bbff;
+                    height: $top-title-height;
+                    border-bottom: 2px solid $redbookColorLight;
+                    .top-title{
+                        font-weight: bold;
+                        font-size: 20px;
+                        padding-left: 10px;
+                        color: #02000e;
+                    }
+                }
+                table{
+                    .left{text-align: left;}
+                    .right{text-align: right;}
+                    .center{text-align: center;}
+                }
+                .va-table-responsive{
+                    >table{
+                        min-width: 100%;
+                    }
+                }
+                
+            }
+           
+        }
+    }
+}
+
+.flex {
+    .item{
+        width: 100%;
+    }
+}
+.va-file-upload--dropzone{
+    &.small{
+        .va-file-upload__field{
+            padding: 10px;
+        }
+    }
+}
+
+ul.status-dropdown{
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style-type: none;
+    padding: 0!important;
+    margin: 0!important;
+    li{
+        list-style-type: none;
+        cursor: pointer;
+        line-height: 30px;
+        padding: 0 10px;
+      &:hover{
+        background-color: #ffc8f2;
+      }
+    }
+}
+
+.card-box{
+    .avatar-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+    }
+}
+
+
+.profile-badge-box{
+    min-width: 150px;
+
+   display: inline-flex;
+    border:1px solid #158de3;
+    margin-left: 15px;
+    border-radius: 22px;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+

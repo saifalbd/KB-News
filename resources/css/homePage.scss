@@ -1,0 +1,71 @@
+.home-page{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    
+    .recent-task-list{
+        li{
+            cursor: pointer;
+            display: grid;
+            grid-template-columns: 30px auto;
+            padding: 3px 0;
+            border-bottom: 1px solid #0000001f;
+            &:last-child{
+                border-bottom: none;
+            }
+            &:hover{
+                background-color: azure;
+            }
+            .text-box{
+                
+             display: flex;
+             align-items: center;
+            }
+            .avatar-box{
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            .task-line{
+                display: grid;
+                grid-template-columns: auto 75px;
+                .center{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .employee-proposals{
+        li{
+            cursor: pointer;
+            display: grid;
+            grid-template-columns: 45px auto;
+            padding: 3px 0;
+            border-bottom: 1px solid #0000001f;
+            &:last-child{
+                border-bottom: none;
+            }
+            &:hover{
+                background-color: azure;
+            }
+            .avatar-box{
+                grid-row-start: 1;
+                grid-row-end: 4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .line-one{
+                >div{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+            .line-two{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 5px;
+            }
+        }
+    }
+}

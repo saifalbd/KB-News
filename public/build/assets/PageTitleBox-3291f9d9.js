@@ -1,0 +1,1 @@
+import{f as a,c as l,i as t,t as i,H as r}from"./app-15300521.js";const c={class:"top-title-box"},n={class:"top-title"},d={__name:"PageTitleBox",props:{title:{type:String,default:"Home Page"}},setup(e){const s=e;return(o,p)=>(a(),l("div",c,[t("div",n,i(s.title),1),t("div",null,[r(o.$slots,"default")])]))}};export{d as _};

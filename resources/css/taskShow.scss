@@ -1,0 +1,19 @@
+.task-show{
+    padding-top: 20px;
+    .top-part{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .description{
+        margin-top: 20px;
+        padding:10px;
+        ol{
+            list-style-type: decimal;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+    }
+  
+    
+}

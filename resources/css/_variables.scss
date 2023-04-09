@@ -1,0 +1,11 @@
+$redbookColor:#f0c6a4;
+$redbookColorLight:#fde9d9;
+$mainBorderSize:2px;
+$topNavHeight:40px;
+
+
+$current-info-height:40px;
+$chat-content:500px;
+$chat-input-layout-height:60px;
+$top-title-height:50px;
+$chatLayoutHeight:calc(100vh - #{$topNavHeight+$top-title-height + 10px})

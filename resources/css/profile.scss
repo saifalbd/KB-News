@@ -1,0 +1,36 @@
+.profile{
+    .box-card{
+        position: relative;
+        .el-card__body{
+            position: relative;   
+        }
+    }
+    .edit-circle{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        transform: translate(-10px,10px);
+    }
+    
+    .top-section{
+
+        position: relative;
+        padding: 15px;
+      
+        border: 1px solid black;
+        .s-body{
+            
+            padding: 10px;
+            .left-side{
+                font-weight: bold;
+                .el-descriptions__body{
+                    .el-descriptions__cell{
+                        font-weight: bold;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
